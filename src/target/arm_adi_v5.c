@@ -662,7 +662,7 @@ int ahbap_debugport_init(struct adiv5_dap *dap)
 	 * Presumably we can ignore the possibility of multiple APs.
 	 */
 	dap->ap_current = !0;
-	dap_ap_select(dap, 0);
+	dap_ap_select(dap, 3);
 	dap->last_read = NULL;
 
 	for (size_t i = 0; i < 10; i++) {
